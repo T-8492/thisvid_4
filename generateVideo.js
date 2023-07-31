@@ -13,7 +13,7 @@ module.exports = (filename, handle) => {
         filter: "volume",
         options: {
           enable: `between(t,0,${duration}/2)`,
-          volume: "0.25"
+          volume: "0.5"
         },
         inputs: metadata.streams.length >= 2 ? "0:a" : "2:a",
         outputs: "audio1"
@@ -21,7 +21,7 @@ module.exports = (filename, handle) => {
         filter: "volume",
         options: {
           enable: `between(t,${duration}/2, ${duration})`,
-          volume: "5"
+          volume: "10"
         },
         inputs: "audio1",
         outputs: "audio2"
@@ -43,8 +43,8 @@ module.exports = (filename, handle) => {
         filter: "drawtext",
         options: {
           fontfile: "'./assets/DejaVuSans.ttf'",
-          text: "@this_vid2",
-          fontcolor: "white",
+          text: "thisvid_4",
+          fontcolor: "cyan",
           fontsize: outputFontSize.toString(),
           box: "1",
           boxcolor: "black@0.5",
@@ -58,7 +58,7 @@ module.exports = (filename, handle) => {
         filter: "drawtext",
         options: {
           fontfile: "'./assets/DejaVuSans.ttf'",
-          text: `@${handle}`,
+          text: `this thing is not needed lol`,
           fontcolor: "white",
           fontsize: outputFontSize.toString(),
           box: "1",
@@ -73,7 +73,7 @@ module.exports = (filename, handle) => {
         filter: "drawtext",
         options: {
           fontfile: "'./assets/DejaVuSans-Bold.ttf'",
-          text: "Downloaded using @this_vid2",
+          text: "Downloaded using thisvid_4",
           fontcolor: "white@0.3",
           fontsize: outputFontSize.toString(),
           shadowcolor: "black",
@@ -88,7 +88,7 @@ module.exports = (filename, handle) => {
         filter: "drawtext",
         options: {
           fontfile: "'./assets/Topaz.ttf'",
-          text: "This video was downloaded using @this_vid2. Any unauthorized usage or reupload of this video is disallowed by @this_vid2 Enterprises. Visit https//projectlounge.pw/thisvid2 for more information.",
+          text: "this video was downloaded using the BEST VIDEO DOWNLOADER, thisvid_4.",
           fontcolor: "white",
           fontsize: outputFontSize.toString(),
           y: "h-line_h-10",
