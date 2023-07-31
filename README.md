@@ -1,7 +1,7 @@
-# this_vid2
-The objectively best Twitter video downloader bot.
+# thisvid_4
+the succesor to this__vid3
 
-[If you want to self-host this, I suggest doing these things.](https://twitter.com/TheEssem/status/1179800410120474625)
+blah blah blah
 
 ## Usage
 Requires Node.js, FFmpeg, and frei0r-plugins:
